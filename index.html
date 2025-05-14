@@ -2611,7 +2611,7 @@ pdf.addImage(donutImage, "PNG", 15, yPosDonut, donutChartWidth, donutChartHeight
   // Calcul de l'économie moyenne mensuelle
   const totalEcoValue = parseFloat(totalEconomies.replace(/[^0-9.-]+/g, ""));
   const economieMoyenne = Math.floor(totalEcoValue / 240); // 240 mois sur 20 ans
-  pdf.text("Economie moyenne sur 20 ans: " + economieMoyenne + " €", synthFieldX2 + 1, synthRow2Y + synthLineHeight - 2);
+  pdf.text("Economie moyenne mensuelle sur 20 ans: " + economieMoyenne + " €", synthFieldX2 + 1, synthRow2Y + synthLineHeight - 2);
   
   // ----- Troisième ligne -----
   const synthRow3Y = synthRow2Y + synthLineHeight + 2;
