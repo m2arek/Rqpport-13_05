@@ -2359,7 +2359,7 @@ if (mapCaptureDataURL) {
   const fieldY3 = fieldY2 + lineHeight + 2;
   pdf.setFillColor(255, 255, 255);
   pdf.roundedRect(fieldX, fieldY3, fieldWidthFull, lineHeight, 2, 2, "DF");
-  pdf.text("Economies réalisés avec la centrale %: " + totalEcon, fieldX + 1, fieldY3 + lineHeight - 2);
+  pdf.text("Economies réalisés avec la centrale : " + totalEcon, fieldX + 1, fieldY3 + lineHeight - 2);
   
   // Tableau "Détails par mois (année 1)" déplacé sous le bloc "Informations sur la production"
   const tableStartY = containerY + containerHeight + 15; // 15 mm sous le bloc info
